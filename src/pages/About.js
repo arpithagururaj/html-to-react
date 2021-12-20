@@ -1,51 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+// import { Link } from "react-router-dom";
+import Footer from "./footer";
+import Header from "./header";
+import CountUp from 'react-countup';
+
+
+
+
+
 
 export default function About(){
     return(
         <React.Fragment>
-            <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+            <Header/>
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Kelly</a></h1>
-      
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"/></a>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-        <li class="active">
-            <Link to="/">About </Link></li>
-         <li> <Link to="/home">Home </Link>  </li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-     
-
-    </div>
-
-  </header>
-
-  <main id="main">
+   {/* <main id="main">
 
   <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
+      <div class="container" data-aos="fade-up"> */}
+        <div class="container" >
+         <div class="section-title">
           <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p><br />
+          <div class ="row">
           <div class="col-lg-4">
-            <img src="assets/img/about.jpg" class="img-fluid" alt=""/>
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Illustrator &amp; UI/UX Designer</h3>
+            
+            <img src="assets/img/about.jpg" class="img-fluid" alt=""/></div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" >
+           <h3>Illustrator &amp; UI/UX Designer</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
@@ -67,12 +50,130 @@ export default function About(){
                   <li><i class="bi bi-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                 </ul>
               </div>
-            </div>
-            <p>
+              <p>
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
             </p>
+              </div>
+            </div>
+            </div>
+           </div>
+
+           
+
+<div class="section-title">
+  <h2>Skills</h2>
+  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+</div>
+<div class="row skills-content">
+
+<div class="col-lg-6">
+
+  <div class="progress">
+    <span class="skill">HTML <i class="val">100%</i></span>
+    <div class="progress-bar-wrap">
+      
+      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+
+  <div class="progress">
+    <span class="skill">CSS <i class="val">90%</i></span>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+
+  <div class="progress">
+    <span class="skill">JavaScript <i class="val">75%</i></span>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="col-lg-6">
+
+
+  <div class="progress">
+    <span class="skill">PHP <i class="val">80%</i></span>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+
+  <div class="progress">
+    <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+    <div class="progress-bar-wrap">
+  
+      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+
+  <div class="progress">
+    <span class="skill">Photoshop <i class="val">55%</i></span>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section-title">
+          <h2>Facts</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row counters">
+       
+
+          <div class="col-lg-3 col-6 text-center">
+          
+            <CountUp start={0}
+            end={232}
+          duration={2.75} />
+            <p>Clients</p>
           </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            
+            <CountUp start={0}
+            end={521}
+          duration={2.75} />
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+         
+            <CountUp start={0}
+            end={1463}
+          duration={2.75} />
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+         
+            <CountUp start={0}
+            end={15}
+          duration={2.75} />
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+</div>
+
+
+           
+        </div>
+       
+
+        
+           
+     
+         
+          {/* </div>
         </div>
 
       </div>
@@ -235,19 +336,10 @@ export default function About(){
 
       </div>
     </section>
-    </main>
-    <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-       
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer>
-  {/* <script src="assets/vendor/purecounter/purecounter.js"></script>
+    </main>   */} 
+     
+  <Footer/>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -257,7 +349,7 @@ export default function About(){
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   
-  <script src="assets/js/main.js"></script> */}
+  <script src="assets/js/main.js"></script> 
     
 
         </React.Fragment>

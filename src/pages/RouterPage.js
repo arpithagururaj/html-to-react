@@ -1,18 +1,23 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
-
-export default function RouterPage(){
+// import your route components too
+export default class RouterComponenet extends React.Component{
+    render(){
     return(
-        <div>
-            <Router>
-                <Switch>
-                    <Route path="/" exact component={Home } />
-                    <Route path="/about"  component={About } />
-                </Switch>
-            </Router>
-
-        </div>
+        <BrowserRouter>
+        <Routes>
+          <Route path="/about" element={<About />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     )
 }
+}
+

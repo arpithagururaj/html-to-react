@@ -1,14 +1,58 @@
-// import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home';
-// import RouterPage from './pages/RouterPage';
+import React from "react";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+// import Header from "./pages/header";
+// import Footer from "./pages/footer";
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-     <Home />
-    </div>
+    <React.Fragment>
+    <Router>
+      <div>
+        {/* <nav>
+          <ul>
+            <li>
+              <Link to="/home">Home</Link>
+            </li>
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            
+          </ul>
+        </nav> */}
+       
+    
+
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+           
+          <Route path="/About">
+            <About />
+          </Route>
+        </Switch>
+      </div>
+      {/* <Footer></Footer> */}
+    </Router>
+    </React.Fragment>
   );
 }
 
-export default App;
+// function Home() {
+//   return <h2>Home</h2>;
+// }
+
+// function About() {
+//   return <h2>About</h2>;
+// }
+
+// function Users() {
+//   return <h2>Users</h2>;
+// }
